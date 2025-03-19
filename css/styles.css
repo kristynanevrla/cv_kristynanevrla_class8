@@ -2,21 +2,26 @@
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #f8f8fc;
+	font-family: "Josefin Sans", serif;
+	color: darkslategray;
+	background-color: pink;
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: lightcyan;
+	font-family:"Josefin Sans", serif;
 }
-
+.myname {
+ font-family:"Shadows Into Light", serif;
+ color: blue
+}
 .resume-main {
 	background-color: #fffefc;
 }
@@ -28,7 +33,7 @@ body {
 /* Styles for lists in the document */
 
 .biography-details li::before, .skill-list li::before {
-	content: ">";
+	content: ">"; color:darkblue;
 	font-weight: 800;
 	display: inline-block;
 	width: 1em;
@@ -36,16 +41,22 @@ body {
 }
 
 .biography-details li::before {
-	color: #EE7623;
+	color: darkblue;
 }
 
 .biography-details li, .skill-list li {
 	padding-left: 1em;
 }
 
-/* Styles for contact icons */
-
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
+}
+
+.change-color-level-native {
+	background-color: #89CFF0;
+}
+
+.change.color.education {
+	color: blue;
 }
